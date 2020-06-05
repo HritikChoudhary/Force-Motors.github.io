@@ -1,0 +1,1531 @@
+
+.html {
+    font-size: 15px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.header {
+    background: repeating-radial-gradient(rgba(148, 91, 62, 0.26),
+            rgba(78, 43, 4, 0.548)), url('hritik car1.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.navigation {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+nav i {
+    width: 30px;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 123, 0);
+    position: absolute;
+    left: 5rem;
+    top: 2rem;
+    padding: 0.7rem;
+    transition: 1s all;
+}
+
+nav i:hover {
+    background-color: white;
+    color: rgb(255, 123, 0);
+}
+
+nav p {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    padding-top: 2rem;
+    padding-left: 9rem;
+    text-shadow: 3px 2px 2px rgb(65, 49, 6);
+    letter-spacing: 0.01rem;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+nav p:hover {
+    color: rgb(255, 123, 0);
+}
+
+nav p::before {
+    content: 'force ';
+    color: rgb(255, 123, 0);
+    font-size: 1.2rem;
+    font-weight: 600;
+
+
+}
+
+nav p:hover::before {
+    color: white;
+}
+
+nav p::after {
+
+    content: 'HONEST RELIABLE DEVOTED ';
+    color: rgb(255, 255, 255);
+    font-size: 0.59rem;
+    text-shadow: none;
+    display: block;
+    padding-bottom: 1rem;
+    letter-spacing: .02rem;
+    padding-left: 0.3rem;
+
+}
+
+nav ul {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    z-index: 1;
+}
+
+nav ul li {
+    margin-right: 2rem;
+    display: inline-block;
+
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255)
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s all;
+    letter-spacing: .04rem;
+}
+
+nav ul li a:hover {
+    border-bottom: 4px solid rgb(255, 123, 0);
+    font-weight: 400;
+}
+
+#box {
+    display: none;
+}
+
+.box-btn {
+    display: none;
+    float: right;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+
+.box-btn:hover {
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+/*  Header part end  */
+/*  Middle part start */
+
+.middle p {
+
+    color: white;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 14rem;
+    left: 8rem;
+
+}
+
+.middle p1 {
+
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 17rem;
+    left: 8rem;
+
+}
+
+.middle p1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4rem;
+    width: 30px;
+    border: 4px solid rgb(255, 123, 0);
+
+}
+
+.description-box-main {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.description-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    background-color: rgb(255, 255, 255);
+    width: 25rem;
+    padding: 1.5rem;
+}
+
+.description p {
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+    font-variant: small-caps;
+    letter-spacing: .05rem;
+}
+
+.description p::after {
+    content: '';
+    text-transform: capitalize;
+    display: block;
+    position: absolute;
+    top: 8rem auto;
+    width: 35px;
+    margin: 1rem 0 1rem;
+    border: 4px solid rgb(255, 123, 0);
+
+}
+
+.description p1 {
+    letter-spacing: .09rem;
+
+}
+
+.details-box {
+    position: absolute;
+    top: -4.5rem;
+    right: 5rem;
+    width: 30rem;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    box-shadow: 2px 2px 25px rgb(223, 215, 215);
+    border-radius: .6rem;
+
+}
+
+.details {
+    width: 30rem;
+    height: 32.5rem;
+    padding: 2rem;
+
+}
+
+.details p {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: .09rem;
+}
+
+.details input {
+    display: block;
+    padding: 1rem;
+    width: 25rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    background-color: rgb(243, 239, 239);
+    border: 0;
+}
+
+.details textarea {
+    display: block;
+    padding: 1rem;
+    width: 25rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    background-color: rgb(243, 239, 239);
+    border: 0;
+}
+
+.details button {
+
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 10rem;
+    text-transform: capitalize;
+    background-color: rgb(255, 132, 17);
+    border: 0;
+}
+
+.details button:hover {
+    background-color: rgb(255, 102, 0);
+}
+
+/*  Middle part start */
+/*  Service part start */
+.services-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    height: 109.5vh;
+}
+
+.services {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 136, 0, 0.801);
+    display: grid;
+    grid-template-rows: repeat(2, 15rem);
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.div1 {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.div1:hover {
+    color: white;
+    background-color: rgba(15, 17, 15, 0.897);
+}
+
+.div1 i {
+    font-size: 2rem;
+    color: rgba(139, 82, 26, 0.993);
+    background-color: rgba(189, 137, 85, 0.753);
+    border-radius: 5rem;
+    padding: .8rem .5rem;
+    text-align: right;
+    border-bottom: .1rem inset rgba(139, 82, 26, 0.993);
+    border-right: .1rem inset rgba(139, 82, 26, 0.993);
+}
+
+.div1:hover i {
+    background-color: rgb(255, 255, 255);
+    border-bottom: .1rem inset rgb(255, 255, 255);
+    border-right: .1rem inset rgb(255, 255, 255);
+}
+
+
+.div1 p {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .03rem;
+    padding: .5rem 0;
+
+}
+
+.div1 p::after {
+    display: block;
+    content: ' ';
+    padding: .2rem;
+    width: 2.5rem;
+    border-bottom: .5rem solid orange;
+}
+
+.div1:hover p::after {
+    border-bottom: .5rem solid rgb(255, 145, 0);
+}
+
+.div1 p1 {
+    font-size: 1rem;
+    letter-spacing: .04rem;
+}
+
+.div2 {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: .5rem;
+
+}
+
+.div2:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 7, 1, 0.897);
+}
+
+.div2 i {
+    font-size: 2rem;
+    color: rgba(89, 116, 16, 0.993);
+    background-color: rgba(158, 189, 72, 0.753);
+    border-radius: 5rem;
+    padding: .8rem .8rem;
+    text-align: right;
+    border-bottom: .1rem inset rgba(89, 116, 16, 0.993);
+    border-right: .1rem inset rgba(89, 116, 16, 0.993);
+}
+
+.div2:hover i {
+    background-color: rgb(255, 255, 255);
+    border-bottom: .1rem inset rgb(255, 255, 255);
+    border-right: .1rem inset rgb(255, 255, 255);
+}
+
+
+.div2 p {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .03rem;
+    padding: .5rem 0;
+
+}
+
+.div2 p::after {
+    display: block;
+    content: ' ';
+    padding: .2rem;
+    width: 2.5rem;
+    border-bottom: .5rem solid orange;
+}
+
+.div2:hover p::after {
+    border-bottom: .5rem solid rgb(255, 145, 0);
+}
+
+.div2 p1 {
+    font-size: 1rem;
+    letter-spacing: .04rem;
+}
+
+.div3 {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: .5rem;
+
+}
+
+.div3:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 7, 1, 0.897);
+}
+
+
+.div3 img {
+    font-size: 2rem;
+    background-color: rgb(255, 208, 0);
+    border-radius: 5rem;
+    padding: .3rem .3rem;
+    text-align: right;
+    border-bottom: .1rem inset rgba(160, 96, 24, 0.993);
+    border-right: .1rem inset rgba(139, 82, 26, 0.993);
+}
+
+
+
+.div3 p {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .03rem;
+    padding: .5rem 0;
+
+}
+
+.div3 p::after {
+    display: block;
+    content: ' ';
+    padding: .2rem;
+    width: 2.5rem;
+    border-bottom: .5rem solid orange;
+}
+
+.div3:hover p::after {
+    border-bottom: .5rem solid rgb(255, 145, 0);
+}
+
+.div3 p1 {
+    font-size: 1rem;
+    letter-spacing: .04rem;
+}
+
+.div4 {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: .5rem;
+
+}
+
+.div4:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 7, 1, 0.897);
+}
+
+.div4 img {
+    font-size: 2rem;
+    background-color: rgba(158, 144, 144, 0.753);
+    border-radius: 5rem;
+    padding: .8rem .8rem;
+    text-align: right;
+    border-bottom: .1rem inset rgba(65, 59, 59, 0.753);
+    border-right: .1rem inset rgba(65, 59, 59, 0.753);
+}
+
+.div4:hover img {
+    background-color: rgb(255, 255, 255);
+    border-bottom: .1rem inset rgb(255, 255, 255);
+    border-right: .1rem inset rgb(255, 255, 255);
+}
+
+.div4 p {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .03rem;
+    padding: .5rem 0;
+
+}
+
+.div4 p::after {
+    display: block;
+    content: ' ';
+    padding: .2rem;
+    width: 2.5rem;
+    border-bottom: .5rem solid orange;
+}
+
+.div4:hover p::after {
+    border-bottom: .5rem solid rgb(255, 145, 0);
+}
+
+.div4 p1 {
+    font-size: 1rem;
+    letter-spacing: .04rem;
+}
+
+.div5 {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: .5rem;
+
+}
+
+.div5:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 7, 1, 0.897);
+}
+
+.div5 i {
+    font-size: 2rem;
+    color: rgba(40, 140, 158, 0.993);
+    background-color: rgba(112, 184, 212, 0.753);
+    border-radius: 5rem;
+    padding: .8rem .8rem;
+    text-align: right;
+    border-bottom: .1rem inset rgba(40, 140, 158, 0.993);
+    border-right: .1rem inset rgba(40, 140, 158, 0.993);
+}
+
+.div5:hover i {
+    background-color: rgb(255, 255, 255);
+    border-bottom: .1rem inset rgb(255, 255, 255);
+    border-right: .1rem inset rgb(255, 255, 255);
+}
+
+.div5 p {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .03rem;
+    padding: .5rem 0;
+
+}
+
+.div5 p::after {
+    display: block;
+    content: ' ';
+    padding: .2rem;
+    width: 2.5rem;
+    border-bottom: .5rem solid orange;
+}
+
+.div5:hover p::after {
+    border-bottom: .5rem solid rgb(255, 145, 0);
+}
+
+.div5 p1 {
+    font-size: 1rem;
+    letter-spacing: .04rem;
+}
+
+.div6 {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: .5rem;
+
+}
+
+.div6:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 7, 1, 0.897);
+}
+
+.div6 i {
+    font-size: 2rem;
+    color: rgba(155, 9, 58, 0.993);
+    background-color: rgba(221, 80, 88, 0.774);
+    border-radius: 5rem;
+    padding: .8rem .5rem;
+    text-align: right;
+    border-bottom: .1rem inset rgba(155, 9, 58, 0.993);
+    border-right: .1rem inset rgba(155, 9, 58, 0.993);
+}
+
+.div6:hover i {
+    background-color: rgb(255, 255, 255);
+    border-bottom: .1rem inset rgb(255, 255, 255);
+    border-right: .1rem inset rgb(255, 255, 255);
+}
+
+.div6 p {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .03rem;
+    padding: .5rem 0;
+
+}
+
+.div6 p::after {
+    display: block;
+    content: ' ';
+    padding: .2rem;
+    width: 2.5rem;
+    border-bottom: .5rem solid orange;
+}
+
+.div6:hover p::after {
+    border-bottom: .5rem solid rgb(255, 145, 0);
+}
+
+.div6 p1 {
+    font-size: 1rem;
+    letter-spacing: .04rem;
+}
+
+/* service part end */
+/* information part start */
+.information-box-main {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 135vh;
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+.information-box {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+
+}
+
+.information-heading p {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    color: rgba(172, 98, 19, 0.815);
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    word-spacing: .2rem;
+    padding-left: 1rem;
+    border-left: 0.8rem solid rgba(250, 184, 60, 0.842);
+    transition: all 1s;
+}
+
+.information-heading p:hover {
+    border-bottom: none;
+}
+
+.information-heading p::after {
+    display: block;
+    content: ' ';
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    width: 10rem;
+    border-bottom: .08rem solid rgba(250, 184, 60, 0.842);
+    border-right: .08rem solid rgba(250, 184, 60, 0.842);
+    margin-left: 25rem;
+}
+
+.information-image {
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    width: 25rem;
+    height: 25rem;
+    background:
+        repeating-linear-gradient(rgba(241, 193, 158, 0.356),
+            rgba(0, 0, 0, 0.5)),
+        url('hritikcar3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    box-shadow: 2px 2px 15px rgba(17, 16, 16, 0.74);
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.information-image:hover {
+    transform: rotate(360deg);
+}
+
+.information-data {
+    position: absolute;
+    top: 10rem;
+    left: 35rem;
+    width: 30rem;
+    height: 30rem;
+}
+
+.information-data ul li {
+    display: inline-flex;
+    padding-left: 2rem;
+}
+
+.information-data ul a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+    letter-spacing: .2rem;
+    border-bottom: 4px solid rgb(245, 245, 245);
+    padding-bottom: .5rem;
+
+}
+
+.information-data ul a:hover {
+    border-bottom: 4px solid rgb(255, 123, 0);
+}
+
+
+
+.info-content p1 {
+    position: absolute;
+    left: -2rem;
+    top: 5rem;
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    letter-spacing: .05rem;
+
+}
+
+.info-content p1::after {
+    content: '';
+    text-transform: capitalize;
+    display: block;
+    position: absolute;
+    left: 2.1rem;
+    width: 45px;
+    margin: .8rem 0 0rem;
+    border: 4px solid rgb(255, 123, 0);
+
+}
+
+.info-content p {
+    position: absolute;
+    left: 0rem;
+    top: 10rem;
+    letter-spacing: .09rem;
+    word-spacing: .5rem;
+
+}
+
+
+/* Information part end  */
+/* Projects part start */
+
+.project-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160vh;
+    background-color: rgba(226, 120, 21, 0.918);
+
+}
+
+.project img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+}
+
+.project-box p {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+
+}
+
+.project {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: repeat(2, 20rem);
+    grid-template-columns: repeat(3, 20rem);
+    grid-gap: 25px;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+/* Projects part end */
+
+/* Footer part start */
+
+.footer-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 143.8vh;
+}
+
+.footer {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 95vh;
+
+}
+
+.icons {
+
+    width: 26rem;
+    height: 9rem;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.icons p {
+    font-size: 2.5rem;
+    color: rgb(255, 60, 0);
+    font-variant: small-caps;
+    padding: 1rem;
+    letter-spacing: .1rem;
+    font-weight: 400;
+}
+
+.icons p::after {
+    content: 'Honest Reliable Devoted !!!';
+    color: rgb(252, 183, 151);
+    font-size: 1rem;
+    display: block;
+    padding: .5rem;
+    text-align: right;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+
+.link {
+
+    width: 15rem;
+    height: 22rem;
+    position: absolute;
+    top: 1rem;
+    left: 30rem;
+
+}
+
+.link p1 {
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    letter-spacing: .1rem;
+}
+
+.link ul li {
+    margin-left: 3rem;
+    padding: 1rem;
+}
+
+.link ul li a {
+    color: rgb(206, 201, 201);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    letter-spacing: .1rem;
+}
+
+.link ul li a:hover {
+    color: gray;
+}
+
+.contact {
+
+    width: 15rem;
+    height: 20rem;
+    position: absolute;
+    top: 1rem;
+    left: 48rem;
+}
+
+.contact p2 {
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    letter-spacing: .1rem;
+}
+
+.contact ul li {
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+.contact ul li a {
+    color: rgb(196, 187, 187);
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+
+.contact ul li a:hover {
+    color: gray;
+}
+
+.social-media {
+
+    width: 23rem;
+    height: 3rem;
+    position: absolute;
+    top: 25rem;
+    left: 22.5rem;
+}
+
+.social-media ul {
+    display: inline-flex;
+
+}
+
+.social-media ul li {
+    padding-left: 2.5rem;
+
+}
+
+.social-media ul li a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-media ul li a:hover {
+    color: rgba(255, 255, 255, 0.315);
+
+}
+
+.copyright {
+    position: absolute;
+    top: 28rem;
+    left: 3rem;
+    width: 60rem;
+    border-top: .01rem inset grey;
+}
+
+.copyright p3 {
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.658);
+    letter-spacing: .1rem;
+    padding-left: 13rem;
+
+}
+
+.copyright p4 {
+    font-size: .8rem;
+    color: rgb(77, 70, 70);
+    letter-spacing: .1rem;
+}
+
+.copyright p4::after {
+    content: "Raja's";
+    font-weight: 600;
+    padding-top: 1rem;
+    color: rgb(124, 112, 112);
+}
+
+.copyright p4:hover::after {
+    color: rgba(219, 209, 209, 0.808);
+}
+
+.copyright i {
+    color: rgb(255, 123, 0);
+}
+
+.copyright i:hover {
+    color: rgb(255, 72, 0);
+}
+
+/* Footer part start */
+
+
+
+
+@media(max-width: 768px) {
+
+    nav i {
+        width: 23px;
+        font-size: 2rem;
+        left: 2.5rem;
+        top: 1.5rem;
+        padding: 0.4rem;
+    }
+
+    nav p {
+        font-size: 1.3rem;
+        padding-top: 1.2rem;
+        padding-left: 5.5rem;
+
+    }
+
+    nav p::before {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 2rem;
+        right: 0rem;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin-right: 1.5rem;
+        display: inline-block;
+
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .check-btn {
+        display: none;
+    }
+
+}
+
+
+
+@media(max-width: 550px) {
+
+
+    .header {
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+
+    nav i {
+        width: 20px;
+        font-size: 2.2rem;
+        left: 2.5rem;
+        top: 1.5rem;
+        padding: 0.4rem;
+    }
+
+    nav p {
+        font-size: 1rem;
+        padding-top: 1.2rem;
+        padding-left: 5.2rem;
+
+    }
+
+    nav p::before {
+        font-size: 1rem;
+    }
+
+    nav p::after {
+        font-size: 0.55rem;
+    }
+
+    nav ul {
+
+        background-color: rgb(185, 162, 162);
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        right: -100%;
+        z-index: 2;
+        text-align: center;
+        transition: 0.7s all;
+
+    }
+
+    nav ul li {
+        display: block;
+        padding: 2.8rem;
+    }
+
+    #box:checked~nav ul {
+        right: 0;
+    }
+
+    .box-btn {
+        display: inline-block;
+        font-size: 1.3rem;
+        top: 1.5rem;
+    }
+
+    .middle p {
+        font-size: 1.5rem;
+        top: 20rem;
+        left: 2rem;
+    }
+
+    .middle p1 {
+
+        font-size: 1.5rem;
+        top: 22rem;
+        left: 2rem;
+
+    }
+
+    .middle p1::after {
+        top: 2.9rem;
+    }
+
+
+    .description-box-main {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 168vh;
+
+    }
+
+    .description-box {
+        position: absolute;
+        top: 2rem;
+        left: 0rem;
+        width: 24.13rem;
+        padding: 1.5rem;
+    }
+
+    .description p {
+        font-size: 1.8rem;
+        padding-bottom: 2.5rem;
+        font-variant: small-caps;
+        letter-spacing: .05rem;
+    }
+
+    .description p1 {
+        font-size: .8rem;
+
+    }
+
+    .details-box {
+        position: absolute;
+        top: 22rem;
+        right: 0rem;
+        width: 24rem;
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+        border-top: .2rem outset orangered;
+        border-bottom: .2rem outset orangered;
+
+    }
+
+    .details {
+        width: 20rem;
+        height: 32rem;
+
+    }
+
+    .details input {
+        display: block;
+        padding: 1rem;
+        width: 20rem;
+        margin-top: 1rem;
+    }
+
+    .details textarea {
+        display: block;
+        padding: 1rem;
+        width: 20rem;
+        margin-top: 1rem;
+    }
+
+    .details button {
+
+        color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 8rem;
+    }
+
+
+    /*  Middle part start */
+    /*  Service part start */
+
+    .services-box {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 336vh;
+    }
+
+    .services {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        display: grid;
+        grid-template-rows: repeat(6, 15rem);
+        grid-template-columns: 95%;
+    }
+
+    /* services part end */
+    /* information part start */
+
+    .information-box-main {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 223vh;
+        background-color: rgba(255, 255, 255, 0.863);
+    }
+
+    .information-box {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+
+    }
+
+    .information-heading p {
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+        width: 22rem;
+        font-size: 1.5rem;
+        padding: .5rem;
+        transition: all 1s;
+    }
+
+    .information-heading p::after {
+        display: block;
+        content: ' ';
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        width: 4rem;
+        margin-left: 15rem;
+    }
+
+    .information-image {
+        position: absolute;
+        top: 14rem;
+        left: 4rem;
+        width: 16rem;
+        height: 16rem;
+        background:
+            repeating-linear-gradient(rgba(241, 193, 158, 0.356),
+                rgba(0, 0, 0, 0.5)),
+            url('hritikcar3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 260px;
+        box-shadow: 2px 2px 15px rgba(17, 16, 16, 0.74);
+        border-radius: 0%;
+        transition: all 1s;
+    }
+
+    .information-image:hover {
+        transform: rotate(360deg);
+        height: 15rem;
+        width: 15rem;
+        left: 4.5rem;
+        top: 15rem;
+        background-size: 100% 240px;
+        border-radius: 50%;
+    }
+
+    .information-data {
+        position: absolute;
+        top: 36rem;
+        left: 0rem;
+        width: 24rem;
+        height: 30rem;
+    }
+
+    .information-data ul li {
+        display: inline-flex;
+        padding-left: 1.5rem;
+    }
+
+    .information-data ul a {
+        font-size: 1rem;
+        border-bottom: 2px solid rgb(245, 245, 245);
+    }
+
+    .information-data ul a:hover {
+        border-bottom: 2px solid rgb(255, 123, 0);
+    }
+
+    .info-content p1 {
+        position: absolute;
+        left: 1rem;
+        top: 4rem;
+
+    }
+
+    .info-content p1::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 2.1rem;
+        width: 45px;
+        margin: .5rem 0 0rem;
+
+    }
+
+    .info-content p {
+        font-size: .9rem;
+        position: absolute;
+        width: 20rem;
+        left: 2rem;
+        top: 9rem;
+        letter-spacing: .08rem;
+        word-spacing: .4rem;
+
+    }
+
+
+    /* Information part end  */
+    /* Projects part start */
+
+    .project-box {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 240vh;
+        background-color: rgba(226, 120, 21, 0.918);
+
+    }
+
+    .project img {
+        width: 20rem;
+        height: 10rem;
+        border-radius: .5rem;
+    }
+
+    .project-box p {
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        padding-top: .5rem;
+
+    }
+
+    .project {
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        width: 100%;
+        height: 200vh;
+        background-color: rgb(255, 251, 247);
+        display: grid;
+        grid-template-rows: repeat(6, 10rem);
+        grid-template-columns: repeat(1, 20rem);
+        grid-gap: 25px;
+        justify-content: center;
+        padding: 2rem;
+
+    }
+
+    /* Projects part end */
+
+    /* Footer part start */
+
+    .footer-box {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 143.8vh;
+    }
+
+    .footer {
+        position: absolute;
+        top: 20rem;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 95vh;
+
+    }
+
+    .icons {
+
+        width: 24rem;
+        height: 9rem;
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+    }
+
+    .icons p {
+        font-size: 2.5rem;
+        color: rgb(255, 60, 0);
+        font-variant: small-caps;
+        padding: 1rem;
+        letter-spacing: .1rem;
+        font-weight: 400;
+    }
+
+    .icons p::after {
+        content: 'Honest Reliable Devoted !!!';
+        color: rgb(252, 183, 151);
+        font-size: .8rem;
+        display: block;
+        text-align: left;
+        letter-spacing: .1rem;
+        font-weight: 300;
+    }
+
+    .link {
+
+        width: 8rem;
+        height: 14rem;
+        position: absolute;
+        top: 8rem;
+        left: 2rem;
+
+    }
+
+    .link p1 {
+        font-size: 1.2rem;
+    }
+
+    .link ul li {
+        margin-left: 1rem;
+        padding: .5rem;
+    }
+
+    .link ul li a {
+        font-size: .8rem;
+
+    }
+
+    .contact {
+
+        width: 8rem;
+        height: 10rem;
+        position: absolute;
+        top: 8rem;
+        left: 12rem;
+    }
+
+    .contact p2 {
+        font-size: 1.2rem;
+    }
+
+    .contact ul li {
+        padding: .5rem;
+        margin-left: 1rem;
+    }
+
+    .contact ul li a {
+        font-size: .8rem;
+        padding-top: 1rem;
+    }
+
+    .social-media {
+
+        width: 18rem;
+        height: 2rem;
+        position: absolute;
+        top: 25rem;
+        left: 3.5rem;
+    }
+
+    .social-media ul li {
+        padding-left: 2rem;
+
+    }
+
+    .social-media ul li a {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .copyright {
+        position: absolute;
+        top: 27rem;
+        left: 2rem;
+        width: 20rem;
+    }
+
+    .copyright p3 {
+        font-size: .8rem;
+        color: rgba(255, 255, 255, 0.658);
+        letter-spacing: .1rem;
+        padding-left: 1rem;
+
+    }
+
+    .copyright p4 {
+        font-size: .8rem;
+        color: rgb(77, 70, 70);
+        letter-spacing: .1rem;
+        padding-left: 2rem;
+    }
+
+    .copyright p4::after {
+        content: "Raja's";
+        font-weight: 600;
+        padding-top: 1rem;
+        color: rgb(124, 112, 112);
+    }
+
+    .copyright p4:hover::after {
+        color: rgba(219, 209, 209, 0.808);
+    }
+
+    .copyright i {
+        color: rgb(255, 123, 0);
+    }
+
+
+}
